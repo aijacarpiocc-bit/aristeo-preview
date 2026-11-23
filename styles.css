@@ -246,7 +246,9 @@ button {
 }
 
 .hero-stage::after {
-  background: linear-gradient(105deg, rgb(55 22 81 / 91%) 15%, rgb(55 22 81 / 75%) 72%, rgb(55 22 81 / 68%));
+  background:
+    linear-gradient(180deg, transparent 37%, rgb(55 22 81 / 54%) 54% 68%, transparent 89%),
+    linear-gradient(95deg, rgb(55 22 81 / 70%), rgb(55 22 81 / 56%) 48%, rgb(55 22 81 / 26%));
   content: "";
 }
 
@@ -770,7 +772,7 @@ button {
   }
 
   .hero-stage::after {
-    background: linear-gradient(90deg, var(--purple) 30%, rgb(75 35 103 / 90%) 43%, rgb(75 35 103 / 72%) 55%, rgb(75 35 103 / 16%) 75%, transparent);
+    background: linear-gradient(90deg, var(--purple) 42%, rgb(75 35 103 / 72%) 52%, rgb(75 35 103 / 22%) 64%, transparent 75%);
   }
 
   .hero h1 {
