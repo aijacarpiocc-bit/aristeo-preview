@@ -216,6 +216,7 @@ button {
   box-shadow: var(--shadow);
 }
 
+.hero-media,
 .hero-video,
 .hero-stage::after,
 .hero-stickers {
@@ -226,9 +227,22 @@ button {
   pointer-events: none;
 }
 
+.hero-media {
+  isolation: isolate;
+}
+
 .hero-video {
   object-fit: cover;
   object-position: 50% 20%;
+  opacity: 0;
+}
+
+.hero-video[data-active] {
+  opacity: 1;
+}
+
+.hero-video[data-incoming] {
+  z-index: 1;
 }
 
 .hero-stage::after {

@@ -33,7 +33,15 @@
   <main>
     <section class="hero" aria-labelledby="titular">
       <div class="hero-stage wrap player" data-player="portada">
-        <video class="hero-video" aria-hidden="true" muted autoplay playsinline loop preload="none" poster="portadas/portada-platanin.jpg" data-src="assets/videos/v1b-platano-piel.mp4"></video>
+        <div class="hero-media" aria-hidden="true">
+          <video class="hero-video" muted playsinline preload="none" poster="portadas/portada-platanin.jpg" data-active></video>
+          <video class="hero-video" muted playsinline preload="none"></video>
+        </div>
+        <template data-hero-playlist>
+          <span data-src="assets/videos/v1b-platano-piel.mp4" data-poster="portadas/portada-platanin.jpg"></span>
+          <span data-src="assets/videos/ficha01-bebe-fresa.mp4" data-poster="portadas/poster-fresa.jpg"></span>
+          <span data-src="assets/videos/ficha05-bebe-manzana.mp4" data-poster="portadas/poster-manzana-hero.jpg"></span>
+        </template>
         <div class="hero-stickers" aria-hidden="true">
           <span class="sticker sticker-banana">🍌</span>
           <span class="sticker sticker-kiwi">🥝</span>
